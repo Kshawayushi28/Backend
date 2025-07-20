@@ -13,7 +13,6 @@ arr.length  // to find length of array
 var newarr = arr.map(function(val){
     return val*3;
 })
-
 console.log(newarr);
 
 // FILTER
@@ -21,7 +20,6 @@ var ans = arr.filter(function(val){
     if(val >= 12) { return true;}
     else return false;
 })
-
 console.log(ans)
 
 // FIND - It finds the first element
@@ -29,7 +27,6 @@ var bud = [1,2,2,3,4]
 var res = bud.find(function(val){
     if(val==2) return val;
 })
-
 console.log (res);
 
 // INDEXOF
@@ -50,7 +47,6 @@ var obj = {
 // obj.age = 25;
 
 Object.freeze(obj); // It is done so that that value does not change
-
 obj.name // or obj['name']  ---> to access names
 obj.age  // to access age
 
@@ -60,15 +56,32 @@ obj.age  // to access age
 function abcd(a,b,c){
 
 }
-
 abcd.length  // 3  ---> no. of parameters is the length of the function
 typeof function(){}
 console.dir(abcd)
 
-// *RETURN*
 
+
+// *RETURN*
 function efgh(){
-    return 12;
+    // return 12;
+    return "hello world";
+}
+var ret = efgh();
+
+
+
+// *ASYNCHRONOUS JS CODING*
+
+// line by line code chale isey kahte hai synchronous
+
+// jo bhi code async nature ka ho, usey side stack mein bhej do and agle code ko chalao jo bhi sync nature ka ho, jb bhi saara sync code chal jaaye, tb check karo ki async code complete hua ya nhi and agar wo complete hua ho toh ussey main stack mein laao aur chala do
+
+async function wxyz(){
+    var blob = await fetch(`https://randomuser.me/api/`);
+    var result = await blob.json();
+
+    console.log(result.results[0].name);
 }
 
-efgh();
+wxyz();
