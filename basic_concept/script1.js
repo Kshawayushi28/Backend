@@ -22,7 +22,7 @@ var ans = arr.filter(function(val){
 })
 console.log(ans)
 
-// FIND - It finds the first element
+// FIND 
 var bud = [1,2,2,3,4]
 var res = bud.find(function(val){
     if(val==2) return val;
@@ -52,7 +52,7 @@ obj.age  // to access age
 
 
 
-// *FUNCTIONS* - It is known as objects in javascript
+// *FUNCTIONS* 
 function abcd(a,b,c){
 
 }
@@ -72,10 +72,6 @@ var ret = efgh();
 
 
 // *ASYNCHRONOUS JS CODING*
-
-// line by line code chale isey kahte hai synchronous
-
-// jo bhi code async nature ka ho, usey side stack mein bhej do and agle code ko chalao jo bhi sync nature ka ho, jb bhi saara sync code chal jaaye, tb check karo ki async code complete hua ya nhi and agar wo complete hua ho toh ussey main stack mein laao aur chala do
 
 async function wxyz(){
     var blob = await fetch(`https://randomuser.me/api/`);

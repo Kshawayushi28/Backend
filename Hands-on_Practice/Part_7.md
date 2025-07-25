@@ -1,0 +1,1 @@
+-> we're maikng a notes taking web app
